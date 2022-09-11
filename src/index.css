@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: 'Oswald';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Oswald';
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: local('Oswald.ttf'), url(./fonts/Oswald.ttf) format("truetype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}

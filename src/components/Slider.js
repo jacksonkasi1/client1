@@ -94,7 +94,8 @@ export default function Slider() {
                 backgroundImage: "url(/card_img1.jpg)",
                 width: "100%",
                 height: "100%",
-                borderRadius: "50px"
+                borderRadius: "50px",
+                cursor: "pointer"
               }}
               onClick={() => {
                 setModelNum(0)
@@ -116,7 +117,8 @@ export default function Slider() {
                 backgroundImage: "url(/card_img1.jpg)",
                 width: "100%",
                 height: "100%",
-                borderRadius: "50px"
+                borderRadius: "50px",
+                cursor: "pointer"
               }}
               onClick={() => {
                 setModelNum(1)
@@ -138,7 +140,8 @@ export default function Slider() {
                 backgroundImage: "url(/card_img1.jpg)",
                 width: "100%",
                 height: "100%",
-                borderRadius: "50px"
+                borderRadius: "50px",
+                cursor: "pointer"
               }}
               onClick={() => {
                 setModelNum(2)

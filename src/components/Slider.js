@@ -9,7 +9,6 @@ import Item from "./Item"
 // ** import mui for model
 import { IconButton } from "@mui/material"
 import { Modal } from "@mui/material"
-import DialogContent from "@mui/material/DialogContent"
 
 // ** import icons
 import { X } from "react-feather"

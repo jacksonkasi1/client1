@@ -8,7 +8,7 @@ import Item from "./Item"
 
 // ** import mui for model
 import { IconButton } from "@mui/material"
-import Dialog from "@mui/material/Dialog"
+import { Modal } from "@mui/material"
 import DialogContent from "@mui/material/DialogContent"
 
 // ** import icons
@@ -51,8 +51,8 @@ export default function Slider() {
   ]
 
   const CustomModel = () => (
-    <Dialog open={modal} onClose={() => setModal(!modal)} maxWidth={"xl"}>
-      <div style={{ display: "relative" }} className="hide_scroll">
+    <Modal open={modal} maxWidth={"xl"}>
+      <div className="model-container">
         {/* close icon button */}
         <IconButton
           onClick={() => setModal(!modal)}
@@ -63,24 +63,27 @@ export default function Slider() {
             zIndex: "9999",
             color: "#000",
             background: "#f0f0f0",
-            padding: "0.5rem"
+            padding: "0.5rem",
+            boxShadow:
+              "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
           }}
+          className="model-close"
         >
           <X size={24} />
         </IconButton>
 
         {/* image */}
-        <img
-          src={modelData[modelNum].image}
-          alt="img"
-          style={{ width: "100%", maxHeight: "500px", objectFit: "cover" }}
-        />
+        <div className="model-body">
+          <img
+            src={modelData[modelNum].image}
+            alt="img"
+            className="model-img"
+          />
 
-        <DialogContent dividers={true} style={{ padding: "1.5rem" }}>
-          <p style={{ fontSize: "20px" }}>{modelData[modelNum].description}</p>
-        </DialogContent>
+          <p style={{ fontSize: "20px"  }}>{modelData[modelNum].description}</p>
+        </div>
       </div>
-    </Dialog>
+    </Modal>
   )
 
   return (
